@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:5000';
+const url = 'http://localhost:8000';
 
 export const fetchStations = () => axios.get(`${url}/stations`);
 export const bookSlot = (id) => axios.post(`${url}/stations/${id}/bookSlot`);

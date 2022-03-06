@@ -65,7 +65,7 @@ app.use((err, req, res, next) => {
 });
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.mia2p.mongodb.net/step2DB?retryWrites=true&w=majority`,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(() => app.listen(PORT,() => console.log(`Server started at ${PORT}`)))
 .catch((error) => console.log(error));
