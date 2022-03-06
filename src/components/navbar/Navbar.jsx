@@ -14,6 +14,7 @@ const Navbar = () => {
           <p><a href="#wgpt3">About</a></p>
           <p><a href="/contact">Contact Us</a></p>
           <p><a href="/home">Get Started</a></p>
+          <p><a href="/host">Become a host</a></p>
         </div>
       </div>
       <div className="gpt3__navbar-sign">
