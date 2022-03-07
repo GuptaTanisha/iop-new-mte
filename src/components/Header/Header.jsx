@@ -33,6 +33,7 @@ const Header = ({setCoordinates,home}) => {
         <Toolbar className={classes.toolbar}>
             <Link className={classes.link} to="/"> EV Charging Station</Link>
             <Box display="flex">
+            <a className={classes.link} href="https://iop-evcs.netlify.app/">Become a host</a>
             <Link className={classes.link} to="/contact">Contact</Link>
             <Link className={classes.link} to="/book">Click to Book</Link>
             {userInfo ? (
@@ -52,9 +53,10 @@ const Header = ({setCoordinates,home}) => {
             ) : (
               <Link className={classes.link} to="/signin">Sign In</Link>
             )}
-            {home && <><Typography variant="h6" className={classes.title}>
+            {home && <>
+            {/* <Typography variant="h6" className={classes.title}>
                 Explore the stations
-            </Typography>
+            </Typography> */}
             <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
                 <div className={classes.search}>
                    <div className = {classes.searchIcon}>

@@ -1,6 +1,7 @@
 import stations from './reducers/stations';
 import slots from './reducers/slots'
 import places from './reducers/places';
+import hosts from './reducers/hosts';
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux';
 import { userRegisterReducer, userSigninReducer } from './reducers/userReducer';
 import thunk from 'redux-thunk';
@@ -14,6 +15,7 @@ const initialState = {
 const reducer = combineReducers({ stations: stations,
     slots: slots,
     places : places,
+    hosts : hosts,
     userSignin: userSigninReducer,
     userRegister: userRegisterReducer
 });

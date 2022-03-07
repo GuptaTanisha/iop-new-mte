@@ -8,6 +8,9 @@ export const getSlots = (id) => axios.get(`${url}/stations/${id}`);
 export const formSubmit = (formData) => axios.post(`${url}/stations/book`,formData);
 export const signin = ({email,password}) => axios.post(`${url}/api/users/signin`,{email,password});
 export const register = ({name,email,password}) => axios.post(`${url}/api/users/register`,{name,email,password});
+
+export const fetchHosts = () => axios.get(`${url}/hosts`);
+
 export const getPlacesData = async (type, sw, ne) => {
   try {
     const { data: { data } } = await axios.get(`https://travel-advisor.p.rapidapi.com/${type}/list-in-boundary`, {
